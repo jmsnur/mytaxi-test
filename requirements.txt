@@ -1,0 +1,4 @@
+pyTelegramBotApi==3.6.7
+requests==2.23.0
+virtualenv==20.0.15
+mysql-connector==2.2.9
