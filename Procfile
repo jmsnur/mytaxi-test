@@ -1,1 +1,1 @@
-mytaxi : python app/main.py $PORT
+worker: python app/main.py $PORT
