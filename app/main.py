@@ -5,18 +5,16 @@ import datetime
 
 
 mydb = mysql.connector.connect(
-  host="apitest.mytaxi.uz",
-  user="jamshid_dc",
-  passwd="ce90698e0e9ddd0d120edf72f43cb878",
-  database="test"
+  host="host",
+  user="USER",
+  passwd="PWD",
+  database="DB"
 )
 
 mycursor = mydb.cursor()
 today = datetime.date.today()
 yesterday = today - datetime.timedelta(days=1)
 # print(yesterday)
-
-# mob = '998913762290'
 
 def get_order_amount(mobile):
     mob = mobile
@@ -43,7 +41,7 @@ def get_order_amount(mobile):
     return msg
 
 
-TOKEN = '985191625:AAGrDaqOecDLN6NuByiVUXfipp_H6MTq2_Q'
+TOKEN = 'TOKEN'
 bot = telebot.TeleBot(TOKEN)
 
 
